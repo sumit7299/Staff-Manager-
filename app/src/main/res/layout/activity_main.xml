@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_begin="16dp" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_begin="16dp" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_end="20dp" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="35dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline3"-->
+<!--        app:srcCompat="@drawable/ic_icon_backarrow" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:text="Staff"-->
+<!--        android:textSize="@dimen/_16sdp"-->
+<!--        android:textColor="@color/purple_main"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/imageView"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/imageView"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline3" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/guideline4"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline3"-->
+<!--        app:srcCompat="@drawable/ic_icon_search_purple" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="All Store"-->
+<!--        android:textSize="@dimen/_14sdp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="25dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/textView2"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textView2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/textView2"-->
+<!--        app:srcCompat="@drawable/ic_icon_dropdown_with_circle" />-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/staffrecyclerView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:paddingBottom="80dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        tools:listitem="@layout/staff_item"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/guideline4"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView3" />-->
+
+<!--    <android.widget.Button-->
+<!--        android:id="@+id/addstaff"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:text="+ Add"-->
+<!--        android:paddingHorizontal="25dp"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_14sdp"-->
+<!--        android:background="@drawable/button"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/staffrecyclerView"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/guideline4"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/guideline2" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

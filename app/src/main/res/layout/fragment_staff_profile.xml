@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StaffProfile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/deletestaffdetails"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_icon_delete_red"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="10dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="10dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/staffprofile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@color/purple_main"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/deletestaffdetails" />
+
+        <TextView
+            android:id="@+id/stafffirstnamedetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sumit"
+            android:textColor="@color/purple_main"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/stafflastnamedetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/staffprofile"
+            app:layout_constraintTop_toBottomOf="@+id/staffprofile" />
+
+        <TextView
+            android:id="@+id/stafflastnamedetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:text="Prajapati"
+            android:textColor="@color/purple_main"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/staffprofile"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/stafffirstnamedetails"
+            app:layout_constraintTop_toBottomOf="@+id/staffprofile" />
+
+        <ImageView
+            android:id="@+id/staffprofilewhatsapp"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_icon_whatsapp_purple"
+            app:layout_constraintEnd_toStartOf="@+id/staffprofilecall"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stafffirstnamedetails" />
+
+        <ImageView
+            android:id="@+id/staffprofilecall"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_icon_call"
+            app:layout_constraintEnd_toStartOf="@+id/staffprofileshare"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/staffprofilewhatsapp"
+            app:layout_constraintTop_toTopOf="@+id/staffprofilewhatsapp" />
+
+        <ImageView
+            android:id="@+id/staffprofileshare"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_icon_share_purple"
+            app:layout_constraintBottom_toBottomOf="@+id/staffprofilecall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/staffprofilecall"
+            app:layout_constraintTop_toTopOf="@+id/staffprofilecall" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toBottomOf="@+id/staffprofilecall">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/purple_main"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                app:tabTextColor="@color/purple_main"
+                tools:ignore="SpeakableTextPresentCheck">
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <ImageView
+            android:id="@+id/backstaffscreen"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_icon_backarrow"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+        <TextView
+            android:id="@+id/staffprofilelogo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="S"
+            android:elevation="@dimen/_2sdp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/staffprofile"
+            app:layout_constraintEnd_toEndOf="@+id/staffprofile"
+            app:layout_constraintStart_toStartOf="@+id/staffprofile"
+            app:layout_constraintTop_toTopOf="@+id/staffprofile" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
